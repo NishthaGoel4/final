@@ -134,7 +134,7 @@
 									try
 									{
 										Class.forName("com.mysql.jdbc.Driver");
-										con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root","root");
+										con=DriverManager.getConnection("jdbc:mysql://172.30.77.163:3306/test", "nishtha","goel");
 									    stmt=con.createStatement();
 									    
 									    rs=stmt.executeQuery("SELECT * FROM tbl_stock where Blood_Bank_ID="+bb_id);

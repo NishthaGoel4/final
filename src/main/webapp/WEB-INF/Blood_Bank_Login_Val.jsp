@@ -29,7 +29,7 @@
 	try
 	{
 	Class.forName("com.mysql.jdbc.Driver");
-	con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","root");
+	con=DriverManager.getConnection("jdbc:mysql://172.30.77.163:3306/test","nishtha","goel");
 	st=con.createStatement();
 	rs=st.executeQuery("select * from tbl_blood_bank");
 	HttpSession session3=request.getSession(true);

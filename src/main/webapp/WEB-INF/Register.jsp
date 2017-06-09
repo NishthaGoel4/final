@@ -27,7 +27,7 @@ try
 	out.println(pin+"</br>");
 	out.println(uid+"</br>");
 	out.println(pwd+"</br>");
-	Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root","root");
+	Connection con=DriverManager.getConnection("jdbc:mysql://172.30.77.163:3306/test", "nishtha","goel");
 	out.println("Connection Done!");
 	PreparedStatement ps=con.prepareStatement("insert into tbl_hospital (Name_of_Hospital,Address,Pincode,username,password) values(?,?,?,?,?)");
 	ps.setString(1,hospitalname);

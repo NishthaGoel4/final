@@ -118,7 +118,7 @@
                             	Class.forName("com.mysql.jdbc.Driver");
                             	//out.println("Driver Loaded");
                             	
-                            	Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root","root");
+                            	Connection con=DriverManager.getConnection("jdbc:mysql://172.30.77.163:3306/test", "nishtha","goel");
                             	//out.println("Connection Done!");
                             	
                             	Statement st=con.createStatement();

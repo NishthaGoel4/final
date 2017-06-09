@@ -34,8 +34,8 @@
 	{
 			
 		Class.forName("com.mysql.jdbc.Driver");
-		String url="jdbc:mysql://localhost:3306/test";
-		con=DriverManager.getConnection(url,"root","root");	
+		String url="jdbc:mysql://172.30.77.163:3306/test";
+		con=DriverManager.getConnection(url,"nishtha","goel");	
 		String sql="insert into dummy_bb (Blood_Bank_id,A_p,A_n,B_p,B_n,O_p,O_n,AB_p,AB_n) values(?,?,?,?,?,?,?,?,?)";
 		ps=con.prepareStatement(sql);
 	

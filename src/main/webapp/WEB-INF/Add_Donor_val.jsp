@@ -35,8 +35,8 @@
 		Date date=new Date(new SimpleDateFormat("yyyy-MM-dd").parse(dod).getTime());
 		
 		Class.forName("com.mysql.jdbc.Driver");
-		String url="jdbc:mysql://localhost:3306/test";
-		con=DriverManager.getConnection(url,"root","root");	
+		String url="jdbc:mysql://172.30.77.163:3306/test";
+		con=DriverManager.getConnection(url,"nishtha","goel");	
 		String sql="insert into tbl_donor (Blood_Camp_Id,First_Name,Last_Name,Address,Blood_Group,Contact_Number,Date_of_Donation) values(?,?,?,?,?,?,?)";
 		ps=con.prepareStatement(sql);
 		

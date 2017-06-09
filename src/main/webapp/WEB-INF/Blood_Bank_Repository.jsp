@@ -130,7 +130,7 @@
 										try
 										{
 												Class.forName("com.mysql.jdbc.Driver");
-												con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","root");
+												con=DriverManager.getConnection("jdbc:mysql://172.30.77.163:3306/test","nishtha","goel");
 												st=con.createStatement();
 												rs=st.executeQuery("select * from dummy_bb where Blood_Bank_id="+key);
 												int flag=0;

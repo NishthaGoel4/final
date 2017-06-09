@@ -33,8 +33,8 @@
 		Date date1=new Date(new SimpleDateFormat("yyyy-MM-dd").parse(date).getTime());
 		
 		Class.forName("com.mysql.jdbc.Driver");
-		String url="jdbc:mysql://localhost:3306/test";
-		con=DriverManager.getConnection(url,"root","root");	
+		String url="jdbc:mysql://172.30.77.163:3306/test";
+		con=DriverManager.getConnection(url,"nishtha","goel");	
 		String sql="insert into tbl_blood_camp (Camp_Name,Held_By,Address,Pincode,Date,Contact_Number,Username,Password) values(?,?,?,?,?,?,?,?)";
 		ps=con.prepareStatement(sql);
 		

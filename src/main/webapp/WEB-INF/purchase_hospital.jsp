@@ -202,7 +202,7 @@
                                 Class.forName("com.mysql.jdbc.Driver");
                             	//out.println("Driver Loaded");
                             	
-                            	 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root","root");
+                            	 con=DriverManager.getConnection("jdbc:mysql://172.30.77.163:3306/test", "nishtha","goel");
                             	//out.println("Connection Done!");
                             	
                             	 st=con.createStatement();
